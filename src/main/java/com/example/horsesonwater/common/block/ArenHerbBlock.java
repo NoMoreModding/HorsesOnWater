@@ -14,19 +14,19 @@ import java.util.Random;
 
 public class ArenHerbBlock extends CropsBlock {
     private final int maxAge = 3;
-
-    public static final IntegerProperty ARENHERB_AGE = BlockStateProperties.AGE_0_3;
+    //TODO fürs Anbauen des Krauts:
+    //public static final IntegerProperty ARENHERB_AGE = BlockStateProperties.AGE_0_3;
 
 
     public ArenHerbBlock (Properties properties){
         super(properties);
     }
-
-    @Override
+    //TODO Auch fürs Anbauen des Krauts, orientation bei beetrootblock
+    /*@Override
     public IntegerProperty getAgeProperty() {
         return ARENHERB_AGE;
     }
-
+     */
     @Override
     public int getMaxAge() {
         return maxAge;
