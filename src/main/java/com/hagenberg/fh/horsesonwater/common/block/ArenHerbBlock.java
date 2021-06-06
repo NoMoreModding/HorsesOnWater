@@ -1,10 +1,8 @@
-package com.example.horsesonwater.common.block;
+package com.hagenberg.fh.horsesonwater.common.block;
 
-import com.example.horsesonwater.init.ItemInit;
+import com.hagenberg.fh.horsesonwater.init.ItemInit;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CropsBlock;
-import net.minecraft.state.IntegerProperty;
-import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.util.IItemProvider;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;

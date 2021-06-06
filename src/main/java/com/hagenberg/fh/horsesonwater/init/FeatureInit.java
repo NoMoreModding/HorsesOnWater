@@ -1,14 +1,13 @@
-package com.example.horsesonwater.init;
+package com.hagenberg.fh.horsesonwater.init;
 
+import com.hagenberg.fh.horsesonwater.world.ArenHerbWorldConfig;
 import net.minecraft.util.ResourceLocation;
-import com.example.horsesonwater.HorsesOnWater;
-import com.example.horsesonwater.world.ArenHerbWorldConfig;
-import com.example.horsesonwater.world.ArenHerbWorldFeature;
+import com.hagenberg.fh.horsesonwater.HorsesOnWater;
+import com.hagenberg.fh.horsesonwater.world.ArenHerbWorldFeature;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStage;
-import net.minecraft.world.gen.WorldGenRegion;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.placement.IPlacementConfig;
@@ -16,14 +15,11 @@ import net.minecraft.world.gen.placement.Placement;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.RegistryObject;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.fml.common.Mod;
 
-
+@Mod.EventBusSubscriber
 public class FeatureInit {
 
-    public static final DeferredRegister<Feature<?>> FEATURES = DeferredRegister.create(ForgeRegistries.FEATURES, HorsesOnWater.MODID);
 
     public static final Feature<ArenHerbWorldConfig> AREN_HERB_FEAT = new ArenHerbWorldFeature();
 

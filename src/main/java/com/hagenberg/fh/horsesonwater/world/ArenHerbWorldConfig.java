@@ -1,4 +1,4 @@
-package com.example.horsesonwater.world;
+package com.hagenberg.fh.horsesonwater.world;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;

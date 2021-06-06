@@ -1,7 +1,6 @@
-package com.example.horsesonwater.init;
+package com.hagenberg.fh.horsesonwater.init;
 
-import com.example.horsesonwater.HorsesOnWater;
-import net.minecraft.block.Block;
+import com.hagenberg.fh.horsesonwater.HorsesOnWater;
 import net.minecraft.item.*;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
@@ -22,10 +21,16 @@ public class ItemInit {
 
     public static final RegistryObject<Item> ARENHERB = ITEMS.register("arenherb", () -> new Item(new Item.Properties()
             .group(ItemGroup.FOOD)
-            .food(ARENHERBFOOD)));
+            .food(ARENHERBFOOD)
+    ));
 
     public static final RegistryObject<Item> AREN_SEEDS = ITEMS.register("aren_seeds", () -> new BlockNamedItem(BlockInit.ARENHERB.get(),
             (new Item.Properties())
-                    .group(ItemGroup.MATERIALS)));
+                    .group(ItemGroup.MATERIALS)
+    ));
 
+    public static final RegistryObject<BlockItem> ARENHERB_WILD = ITEMS.register("arenherb_wild",
+            () -> new BlockItem(BlockInit.ARENHERB_WILD.get(),
+                    new Item.Properties().group(ItemGroup.DECORATIONS)
+            ));
 }
