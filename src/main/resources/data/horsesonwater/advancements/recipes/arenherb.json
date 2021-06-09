@@ -1,0 +1,26 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "hasarenherb": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "horsesonwater:arenherb"
+          }
+        ]
+      }
+    }
+  },
+
+  "requirements": [
+    [
+      "hasarenherb"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "horsesonwater:arenherb_to_seeds"
+    ]
+  }
+}

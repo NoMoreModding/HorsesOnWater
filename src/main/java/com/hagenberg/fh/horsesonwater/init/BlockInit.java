@@ -5,6 +5,7 @@ import com.hagenberg.fh.horsesonwater.common.block.ArenHerbBlock;
 import com.hagenberg.fh.horsesonwater.common.block.ArenHerbWildBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
@@ -19,14 +20,20 @@ import java.util.logging.Logger;
 
 @Mod.EventBusSubscriber(modid = HorsesOnWater.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BlockInit {
+
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, HorsesOnWater.MODID);
 
     public static final RegistryObject<Block> ARENHERB = BLOCKS.register("arenherb", () -> new ArenHerbBlock(
             AbstractBlock.Properties.create(Material.PLANTS)
+            .doesNotBlockMovement()
+            .zeroHardnessAndResistance()
     ));
 
     public static final RegistryObject<Block> ARENHERB_WILD = BLOCKS.register("arenherb_wild", () -> new ArenHerbWildBlock(
             AbstractBlock.Properties.create(Material.PLANTS)
+            .doesNotBlockMovement()
+            .zeroHardnessAndResistance()
+            .sound(SoundType.WOOD)
     ));
 
     @SubscribeEvent
@@ -34,5 +41,4 @@ public class BlockInit {
         RenderTypeLookup.setRenderLayer(ARENHERB.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ARENHERB_WILD.get(), RenderType.getCutout());
     }
-
 }

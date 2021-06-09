@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "horsesonwater:arenherb"
+    }
+  ],
+  "result": {
+    "item": "horsesonwater:aren_seeds",
+    "count": 1
+  }
+}

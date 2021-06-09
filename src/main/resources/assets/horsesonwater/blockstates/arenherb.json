@@ -1,5 +1,8 @@
 {
-  "variants":{
-    "":{"model": "horsesonwater:block/arenherb"}
+  "variants": {
+    "age=0" : {"model" : "horsesonwater:block/arenherb_0"},
+    "age=1" : {"model" : "horsesonwater:block/arenherb_1"},
+    "age=2" : {"model" : "horsesonwater:block/arenherb_2"},
+    "age=3" : {"model" : "horsesonwater:block/arenherb_3"}
   }
 }

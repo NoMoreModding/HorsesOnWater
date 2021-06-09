@@ -23,8 +23,6 @@ public class FeatureInit {
 
     public static final Feature<ArenHerbWorldConfig> AREN_HERB_FEAT = new ArenHerbWorldFeature();
 
-    //public static final RegistryObject <Feature<ArenHerbWorldConfig>> AREN_HERB = FEATURES.register("feature_aren_herb",() -> new ArenHerbWorldFeature());
-
     public static final ConfiguredFeature<?,?> AREN_HERB_CONF = AREN_HERB_FEAT
             .withConfiguration(new ArenHerbWorldConfig(5))
             .withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG));

@@ -10,13 +10,13 @@ import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.world.IBlockReader;
 
 public class ArenHerbWildBlock extends BushBlock {
-    //TODO change to better fit it, its currently the minecraft flower shape itself
-    private final VoxelShape SHAPE = Block.makeCuboidShape(5.0D, 0.0D, 5.0D, 11.0D, 10.0D, 11.0D);
+    private final VoxelShape SHAPE = Block.makeCuboidShape(4.0D, 0.0D, 4.0D, 12.0D, 12.0D, 12.0D);
 
     public ArenHerbWildBlock(Properties properties){
         super(properties);
     }
 
+    @SuppressWarnings("deprecation")
     @Override
     public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
         Vector3d offset = state.getOffset(worldIn, pos);
