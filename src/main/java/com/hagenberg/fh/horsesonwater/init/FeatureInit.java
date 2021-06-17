@@ -24,7 +24,7 @@ public class FeatureInit {
     public static final Feature<ArenHerbWorldConfig> AREN_HERB_FEAT = new ArenHerbWorldFeature();
 
     public static final ConfiguredFeature<?,?> AREN_HERB_CONF = AREN_HERB_FEAT
-            .withConfiguration(new ArenHerbWorldConfig(5))
+            .withConfiguration(new ArenHerbWorldConfig(2,5))
             .withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG));
 
     @SubscribeEvent
