@@ -26,8 +26,8 @@ public class ArenHerbBlock extends CropsBlock {
     public static final IntegerProperty AREN_AGE = BlockStateProperties.AGE_0_3;
 
     private static final VoxelShape[] SHAPE = new VoxelShape[]{
-            Block.makeCuboidShape(7.0D,0.0D,7.0D,9.0D,1.0D,9.0D),
-            Block.makeCuboidShape(7.5D,0.0D,7.5D,9.5D,4.0D,9.5D),
+            Block.makeCuboidShape(3.0D,0.0D,3.0D,13.0D,2.0D,13.0D),
+            Block.makeCuboidShape(6D,0.0D,6D,10D,5.0D,10D),
             Block.makeCuboidShape(6.0D,0.0D,6.0D,10.0D,7.0D,10.0D),
             Block.makeCuboidShape(4.0D, 0.0D, 4.0D, 12.0D, 11.0D, 12.0D),
     };
@@ -69,7 +69,7 @@ public class ArenHerbBlock extends CropsBlock {
 
     @Override
     protected int getBonemealAgeIncrease(World worldIn) {
-        return super.getBonemealAgeIncrease(worldIn)/3;
+        return  super.getBonemealAgeIncrease(worldIn)/2;
     }
 
     protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
