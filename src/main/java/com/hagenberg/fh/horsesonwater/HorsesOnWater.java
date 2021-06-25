@@ -1,6 +1,7 @@
 package com.hagenberg.fh.horsesonwater;
 
 import com.hagenberg.fh.horsesonwater.init.BlockInit;
+import com.hagenberg.fh.horsesonwater.init.EffectInit;
 import com.hagenberg.fh.horsesonwater.init.ItemInit;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -26,6 +27,7 @@ public class HorsesOnWater
 
         BlockInit.BLOCKS.register(bus);
         ItemInit.ITEMS.register(bus);
+        EffectInit.EFFECTS.register(bus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

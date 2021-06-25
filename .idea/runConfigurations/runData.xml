@@ -3,7 +3,7 @@
   <configuration default="false" factoryName="Application" name="runData" singleton="false" type="Application">
     <option name="MAIN_CLASS_NAME" value="net.minecraftforge.userdev.LaunchTesting"/>
     <option name="VM_PARAMETERS" value="-Dforge.logging.console.level=debug -Dforge.logging.markers=REGISTRIES"/>
-    <option name="PROGRAM_PARAMETERS" value="--mod horsesonwater --all --output C:\Users\lukas\Documents\HorsesOnWater\src\generated\resources --existing C:\Users\lukas\Documents\HorsesOnWater\src\main\resources"/>
+    <option name="PROGRAM_PARAMETERS" value="--mod horsesonwater --all --output D:\FH-Oberoesterreich\4_Semester\_Pro_4\HorsesOnWater\src\generated\resources --existing D:\FH-Oberoesterreich\4_Semester\_Pro_4\HorsesOnWater\src\main\resources"/>
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$\run"/>
     <module name="HorsesOnWater.main"/>
     <envs>
