@@ -32,7 +32,6 @@ public class FrostWalkerEffect extends Effect {
     @Override
     public void performEffect(LivingEntity entityLivingBaseIn, int amplifier) {
         freezeNearby(entityLivingBaseIn,entityLivingBaseIn.world,entityLivingBaseIn.getPosition(),amplifier);
-        //HorsesOnWater.LOGGER.info("test");
 
         super.performEffect(entityLivingBaseIn, amplifier);
     }

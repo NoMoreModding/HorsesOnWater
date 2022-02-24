@@ -1,5 +1,6 @@
 {
   "item.horsesonwater.arenherb": "Arenherb",
   "item.horsesonwater.aren_seeds": "Arenseeds",
-  "block.horsesonwater.arenherb_wild": "Wild Arenherb"
+  "block.horsesonwater.arenherb_wild": "Wild Arenherb",
+  "effect.horsesonwater.frost_walker_effect": "Frost Walker"
 }
