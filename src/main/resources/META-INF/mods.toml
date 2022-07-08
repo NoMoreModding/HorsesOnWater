@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[36,)"
+loaderVersion="[40,)"
 # Review your options at https://choosealicense.com/.
 license="MIT"
 # A URL to refer people to when problems occur with this mod
@@ -10,8 +10,8 @@ modId="horsesonwater"
 version="${file.jarVersion}" #mandatory
 displayName="Horses on Water" #mandatory
 # A URL for the "homepage" for this mod, displayed in the mod UI
-#displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
-logoFile="logo.png" #optional
+displayURL="https://www.curseforge.com/minecraft/mc-mods/horses-on-water" #optional
+logoFile="Header.png" #optional
 # A text field displayed in the mod UI
 credits="Thanks to Wolfgang Hochleitner and Michael Lankes"
 authors="Tobias Filler, Lukas Hartinger"
@@ -22,7 +22,7 @@ Arenherb will now grow in your would, allowing you to ride horses on water.
 [[dependencies.horsesonwater]]
 modId="forge"
 mandatory=true
-versionRange="[36,)"
+versionRange="[40,)"
 ordering="NONE"
 side="BOTH"
 [[dependencies.horsesonwater]]

@@ -47,6 +47,3 @@ public class HorsesOnWater
 }
 
 //Todo Adding some sort of Gui to indicated how long the effect will last
-//Todo making a logo for the mod
-//Todo take some pictures of the mod
-//Todo add the cursforge link to the mods.toml
