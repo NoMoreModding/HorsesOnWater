@@ -2,12 +2,13 @@ package com.hagenberg.fh.horsesonwater.init;
 
 import com.hagenberg.fh.horsesonwater.HorsesOnWater;
 import com.hagenberg.fh.horsesonwater.common.item.ArenHerbItem;
-import net.minecraft.item.*;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.potion.Effects;
-import net.minecraftforge.fml.RegistryObject;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 
 public class ItemInit {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, HorsesOnWater.MODID);
@@ -26,15 +27,15 @@ public class ItemInit {
 //    ));
 
     public static final RegistryObject<Item> ARENHERB = ITEMS.register("arenherb", () -> new ArenHerbItem(new Item.Properties()
-            .group(ItemGroup.FOOD)));
+            .tab(CreativeModeTab.TAB_FOOD)));
 
-    public static final RegistryObject<Item> AREN_SEEDS = ITEMS.register("aren_seeds", () -> new BlockNamedItem(BlockInit.ARENHERB.get(),
+    public static final RegistryObject<Item> AREN_SEEDS = ITEMS.register("aren_seeds", () -> new ItemNameBlockItem(BlockInit.ARENHERB.get(),
             (new Item.Properties())
-                    .group(ItemGroup.MATERIALS)
+                    .tab(CreativeModeTab.TAB_MATERIALS)
     ));
 
     public static final RegistryObject<BlockItem> ARENHERB_WILD = ITEMS.register("arenherb_wild",
             () -> new BlockItem(BlockInit.ARENHERB_WILD.get(),
-                    new Item.Properties().group(ItemGroup.DECORATIONS)
+                    new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)
             ));
 }

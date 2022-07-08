@@ -25,10 +25,10 @@ mandatory=true
 versionRange="[36,)"
 ordering="NONE"
 side="BOTH"
-[[dependencies.nomoretorchspam]]
+[[dependencies.horsesonwater]]
 modId="minecraft"
 mandatory=true
-versionRange="[1.16.5,1.17)"
+versionRange="[1.18.2,1.19)"
 ordering="NONE"
 side="BOTH"
 
